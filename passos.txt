@@ -1,0 +1,26 @@
+Raiane
+
+git config --global user.name raianeneubern
+git config --global user.email raianeneubern@gmail.com
+
+
+Fran 
+
+git config --global user.name franciellemagiore
+git config --global user.email franciellemagiore12@gmail.com
+
+
+loren
+
+
+git config --global user.name lorenTangi
+git config --global user.email LorenTangi24@gmail.com
+
+
+Raissa
+
+
+git config --global user.name             
+git config --global user.email @gmail.com
+
+cd GStore
