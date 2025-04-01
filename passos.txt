@@ -23,4 +23,8 @@ Raissa
 git config --global user.name             
 git config --global user.email @gmail.com
 
-cd GStore
+cd BEvents
+
+exte
+vscode-icons
+Live Server
