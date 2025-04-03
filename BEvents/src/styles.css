@@ -1,0 +1,11 @@
+.content {
+    display: none;
+}
+
+.content.show {
+    display: flex;
+}
+.content-img {
+    width: 50%;
+    height: 250px;
+}
