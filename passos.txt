@@ -13,15 +13,15 @@ git config --global user.email franciellemagiore12@gmail.com
 loren
 
 
-git config --global user.name lorenTangi
-git config --global user.email LorenTangi24@gmail.com
+git config --global user.name LorenTangi
+git config --global user.email lorentangi24@gmail.com
 
 
 Raissa
 
 
-git config --global user.name             
-git config --global user.email @gmail.com
+git config --global user.name RaissaBorgess            
+git config --global user.email raissasantos123.rs33@gmail.com
 
 cd BEvents
 
