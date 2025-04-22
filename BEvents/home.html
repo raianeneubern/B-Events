@@ -1,152 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEvents - Home</title>
+    <link rel="stylesheet" href="/BEvents/src/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">BEvents</div>
+            <ul class="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Eventos Públicos</a></li>
+                <li><a href="#">Campanhas</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>B'Events</title>
-        <link rel="stylesheet" href="src/styles.css">
-    </head>
+    <main>
+        <section class="hero">
+            <h1>Bem-vindo à BFEventos</h1>
+        </section>
 
-    <body>
-        <div id="container">
-            <div class="tab-buttons">
-                <button class="tab-btn active" content-id="home">
-                    Home
-                </button>
+        <section class="calendar">
+            <h2>Janeiro 2025</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>DOM</th><th>SEG</th><th>TER</th><th>QUA</th><th>QUI</th><th>SEX</th><th>SÁB</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar-body"></tbody>
+            </table>
+        </section>
 
-                <button class="tab-btn" content-id="barraRock">
-                    Eventos Oficiais
-                </button>
+        <section class="event-cards">
+            <div class="card"><img src="/BEvents/src/images/BarraRock.png" alt="Barra Rock Fest"></div>
+            <div class="card"><img src="/BEvents/src/images/BarraFolia.png" alt="Baile Folia"></div>
+            <div class="card"><img src="/BEvents/src/images/NiverBarra.png" alt="Barra Ponta"></div>
+            <div class="card"><img src="/BEvents/src/images/BlocoDoGalo.png" alt="Bloco do Galo"></div>
+            <div class="card"><img src="/BEvents/src/images/Adocao.png" alt="Adote um Pet"></div>
+            <div class="card"><img src="/BEvents/src/images/home.jpg" alt="Adote um Pet"></div>
+        </section>
 
-                <button class="tab-btn" content-id="barraFolia">
-                    Barra Folia
-                </button>
+        <section class="events-today">
+            <button onclick="showTodayEvents()">EVENTOS HOJE</button>
+            <button onclick="showMonthEvents()">EVENTOS DO MÊS</button>
+        </section>
 
-                <button class="tab-btn" content-id="niverBarra">
-                    Niver Barra
-                </button>
+        <section class="info-box">
+            <p>Somos um site que apresenta eventos e campanhas de Barra  Bonita! Nosso propósito é entregar praticidade para você que mora ou deseja visitar a cidade Simpatia! </p>
+        </section>
+    </main>
 
-                <button class="tab-btn" content-id="blocoDoGalo">
-                    Bloco do Galo
-                </button>
-
-                <button class="tab-btn" content-id="adocao">
-                    Campanha
-                </button>
-
-                <button class="tab-btn" content-id="maratona">
-                   Maratona
-                </button>
-
-            </div>
-
-            
-            <div class="tab-contents">
-                <div class="content show" id="home">
-                    <img src="src/images/home.jpg" class="content-img" alt="home image">
-                           
-                    <div class="infos">
-                        <h1 class="content-title">
-                            Home
-                        </h1>
-
-                        <p class="content-description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, esse ipsa placeat dolores pariatur dicta. A, officiis itaque? Nam magni officiis natus cum commodi facilis amet quibusdam debitis alias fugit.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="content" id="barraRock">
-                    <img src="src/images/BarraRock.png" class="content-img" alt="barra rock image">
-                           
-                    <div class="infos">
-                        <h1 class="content-title">
-                            Barra Rock               
-                        </h1>
-
-                        <p class="content-description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, esse ipsa placeat dolores pariatur dicta. A, officiis itaque? Nam magni officiis natus cum commodi facilis amet quibusdam debitis alias fugit.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="content" id="barraFolia">
-                    <img src="src/images/BarraFolia.png" class="content-img" alt="Barra Folia image">
-                           
-                    <div class="infos">
-                        <h1 class="content-title">
-                            Barra Folia             
-                        </h1>
-
-                        <p class="content-description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, esse ipsa placeat dolores pariatur dicta. A, officiis itaque? Nam magni officiis natus cum commodi facilis amet quibusdam debitis alias fugit.
-                        </p>
-                    </div>
-                </div>
-
-                
-                <div class="content" id="niverBarra">
-                    <img src="src/images/NiverBarra.png" class="content-img" alt=" Niver Barra image">
-                           
-                    <div class="infos">
-                        <h1 class="content-title">
-                            Niver Barra            
-                        </h1>
-
-                        <p class="content-description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, esse ipsa placeat dolores pariatur dicta. A, officiis itaque? Nam magni officiis natus cum commodi facilis amet quibusdam debitis alias fugit.
-                        </p>
-                    </div>
-                </div>
-
-                
-                <div class="content" id="blocoDoGalo">
-                    <img src="src/images/BlocoDoGalo.png" class="content-img" alt="Bloco do Galo image">
-                           
-                    <div class="infos">
-                        <h1 class="content-title">
-                            Bloco do Galo            
-                        </h1>
-
-                        <p class="content-description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, esse ipsa placeat dolores pariatur dicta. A, officiis itaque? Nam magni officiis natus cum commodi facilis amet quibusdam debitis alias fugit.
-                        </p>
-                    </div>
-                </div>
-
-                
-                <div class="content" id="adocao">
-                    <img src="src/images/Adocao.png" class="content-img" alt="Adocao image">
-                           
-                    <div class="infos">
-                        <h1 class="content-title">
-                            Adoção
-                        </h1>
-
-                        <p class="content-description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, esse ipsa placeat dolores pariatur dicta. A, officiis itaque? Nam magni officiis natus cum commodi facilis amet quibusdam debitis alias fugit.
-                        </p>
-                    </div>
-                </div>
-
-                
-                <div class="content" id="maratona">
-                    <img src="src/images/Maratona.png" class="content-img" alt="Adoção image">
-                           
-                    <div class="infos">
-                        <h1 class="content-title">
-                          Maratona         
-                        </h1>
-
-                        <p class="content-description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, esse ipsa placeat dolores pariatur dicta. A, officiis itaque? Nam magni officiis natus cum commodi facilis amet quibusdam debitis alias fugit.
-                        </p>
-                    </div>
-                </div>
-                
-            </div>
+    <footer>
+        <div class="socials">
+            <p>@BFeventos</p>
+            <p>@bfeventos_oficial</p>
+            <p>bfeventos@gmail.com</p>
         </div>
-        <script src="src/script.js"></script>
-    </body>
+    </footer>
+
+    <script src="/BEvents/src/script.js"></script>
+</body>
 </html>
