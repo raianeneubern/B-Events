@@ -1,185 +1,240 @@
-/* styles.css atualizado para responsividade */
-
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    background-color: #fbe9e7;
-    color: #fff;
-  }
-  
-  /* Navbar */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fbe9e7;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1440;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Home */
+.Home {
+  background-image: url('capa-home.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Calendário */
+.calendar {
+  background-color: #2e1b5d;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.calendar h2 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+  padding: 0.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* Cards */
+.event-cards {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #2e1b5d;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Botões */
+.events-today {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 1rem;
+}
+
+.events-today button {
+  background-color: #4e2a84;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Caixa de Info */
+.info-box {
+  background-color: #2e1b5d;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1440;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsividade geral */
+@media (max-width: 768px) {
   .navbar {
-    background-color: #1a1440;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    color: #fff;
-  }
-  
-  .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .navbar .nav-links {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .navbar .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Hero */
-  .hero {
-    background-image: url('capa-home.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    color: #fff;
-    text-shadow: 1px 1px 5px #000;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  /* Calendário */
-  .calendar {
-    background-color: #2e1b5d;
-    margin: 2rem auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .calendar h2 {
-    margin-bottom: 1rem;
-    color: #fff;
-  }
-  
-  .calendar table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .calendar th, .calendar td {
-    padding: 0.5rem;
-    color: #fff;
-    text-align: center;
-  }
-  
-  /* Cards */
-  .event-cards {
-    display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #2e1b5d;
-  }
-  
-  .card {
-    flex: 0 0 auto;
-    width: 150px;
-    height: 150px;
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  /* Botões */
-  .events-today {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin: 1.5rem 1rem;
-  }
-  
-  .events-today button {
-    background-color: #4e2a84;
-    color: #fff;
-    padding: 0.75rem 1.25rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  /* Caixa de Info */
-  .info-box {
-    background-color: #2e1b5d;
-    margin: 2rem 1rem;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    color: #fff;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #1a1440;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  /* Responsividade geral */
-  @media (max-width: 768px) {
-    .navbar {
       flex-direction: column;
       align-items: flex-start;
-    }
-  
-    .navbar .nav-links {
+  }
+
+  .navbar .nav-links {
       flex-direction: column;
       width: 100%;
-    }
-  
-    .event-cards {
+  }
+
+  .event-cards {
       padding: 1rem 0.5rem;
-    }
-  
-    .card {
+  }
+
+  .card {
       width: 120px;
       height: 120px;
-    }
-  
-    .hero {
+  }
+
+  .hero {
       font-size: 1.2rem;
-    }
-  
-    .events-today button {
+  }
+
+  .events-today button {
       width: 100%;
       max-width: 300px;
-    }
   }
-  
-  @media (max-width: 400px) {
-    .hero {
+}
+
+@media (max-width: 400px) {
+  .hero {
       font-size: 1rem;
-    }
   }
-  
+}
+
+/* Carrossel horizontal */
+.carrossel-lateral {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem;
+  background-color: #2e1b5d;
+}
+
+.carousel {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.5s ease;
+}
+
+.carousel img {
+  width: 300px; /* Definindo uma largura fixa para as imagens */
+  height: 200px; /* Definindo uma altura fixa para as imagens */
+  object-fit: cover;
+  flex-shrink: 0; /* Impede que as imagens encolham */
+}
+
+/* Setas de navegação */
+.carrossel-lateral .prev, .carrossel-lateral .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carrossel-lateral .prev {
+  left: 0;
+}
+
+.carrossel-lateral .next {
+  right: 0;
+}
+
+/* Responsividade do Carrossel */
+@media (max-width: 768px) {
+  .carousel img {
+      width: 250px; /* Menor largura em telas menores */
+      height: 180px; /* Ajuste da altura em telas menores */
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel img {
+      width: 200px; /* Ajusta ainda mais para telas muito pequenas */
+      height: 150px;
+  }
+}

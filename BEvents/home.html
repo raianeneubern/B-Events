@@ -1,68 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEvents - Home</title>
-    <link rel="stylesheet" href="/BEvents/src/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - BFEventos</title>
+    <link rel="stylesheet" href="/BEvents/src/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 </head>
+
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">BEvents</div>
+
+            <!-- Logo da página -->
+            <button><link rel="apple-touch-icon" href="favicon.png">
+            </button>
+
+            <!-- Menu de navegação -->
             <ul class="nav-links">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Eventos Públicos</a></li>
-                <li><a href="#">Campanhas</a></li>
-                <li><a href="#">Sair</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="oficiais.html">Oficiais</a></li>
+                <li><a href="privados.html">Privados</a></li>
+                <li><a href="campanhas.html">Campanhas</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
             </ul>
+
+            <!-- Link de login -->
+            <a href="#" class="login">Log</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Bem-vindo à BFEventos</h1>
+
+        <!-- Seção de hero (imagem de abertura da página) -->
+        <section class="Home">
+            <img src="/BEvents/src/images/home.jpg" alt="Imagem de abertura" />
+            <div class="hero-text">Bem-vindo ao BFEventos</div>
         </section>
 
-        <section class="calendar">
+        <!-- Seção do calendário com tabela -->
+        <section class="calendario">
             <h2>Janeiro 2025</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>DOM</th><th>SEG</th><th>TER</th><th>QUA</th><th>QUI</th><th>SEX</th><th>SÁB</th>
+                        <th>DOM</th>
+                        <th>SEG</th>
+                        <th>TER</th>
+                        <th>QUA</th>
+                        <th>QUI</th>
+                        <th>SEX</th>
+                        <th>SÁB</th>
                     </tr>
                 </thead>
-                <tbody id="calendar-body"></tbody>
+                <tbody id="calendar-body">
+
+                    <!-- O conteúdo do calendário será preenchido via JavaScript -->
+                </tbody>
             </table>
         </section>
 
-        <section class="event-cards">
-            <div class="card"><img src="/BEvents/src/images/BarraRock.png" alt="Barra Rock Fest"></div>
-            <div class="card"><img src="/BEvents/src/images/BarraFolia.png" alt="Baile Folia"></div>
-            <div class="card"><img src="/BEvents/src/images/NiverBarra.png" alt="Barra Ponta"></div>
-            <div class="card"><img src="/BEvents/src/images/BlocoDoGalo.png" alt="Bloco do Galo"></div>
-            <div class="card"><img src="/BEvents/src/images/Adocao.png" alt="Adote um Pet"></div>
-            <div class="card"><img src="/BEvents/src/images/home.jpg" alt="Adote um Pet"></div>
-        </section>
-
+        <!-- Seção com botões para visualizar eventos do dia ou do mês -->
         <section class="events-today">
             <button onclick="showTodayEvents()">EVENTOS HOJE</button>
             <button onclick="showMonthEvents()">EVENTOS DO MÊS</button>
         </section>
 
+        <!-- Seção do carrossel lateral com imagens dos eventos -->
+        <section class="carrossel-lateral">
+
+            <!-- Botões de navegação do carrossel -->
+            <button class="prev">&#10094;</button>
+
+            <!-- Carrossel de imagens -->
+            <div class="carousel">
+                <div><img src="/BEvents/src/images/BarraRock.png" alt="Barra Rock Fest" /></div>
+                <div><img src="/BEvents/src/images/BarraFolia.png" alt="Baile Folia" /></div>
+                <div><img src="/BEvents/src/images/NiverBarra.png" alt="Barra Ponta" /></div>
+                <div><img src="/BEvents/src/images/BlocoDoGalo.png" alt="Bloco do Galo" /></div>
+                <div><img src="/BEvents/src/images/Adocao.png" alt="Adote um Pet" /></div>
+                <div><img src="/BEvents/src/images/Maratona.png" alt="Maratona um Pet" /></div>
+            </div>
+
+        <!-- Seção de informação sobre o site -->
         <section class="info-box">
-            <p>Somos um site que apresenta eventos e campanhas de Barra  Bonita! Nosso propósito é entregar praticidade para você que mora ou deseja visitar a cidade Simpatia! </p>
+            <p>
+                Somos um site que apresenta eventos e campanhas de Barra Bonita! Nosso propósito é entregar praticidade
+                para você que mora ou deseja visitar a cidade Simpatia!
+            </p>
         </section>
     </main>
 
+    <!-- Rodapé com informações de redes sociais -->
     <footer>
         <div class="socials">
-            <p>@BFeventos</p>
-            <p>@bfeventos_oficial</p>
-            <p>bfeventos@gmail.com</p>
+            <p>@BFEventos</p>
+            <p>l@bfEventos_oficial</p>
+            <p>bfEventos@gmail.com</p>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <!-- Importando o script personalizado do site -->
     <script src="/BEvents/src/script.js"></script>
+
+    <!-- Importando o jQuery (necessário para o funcionamento do Slick Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Importando o script do Slick Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </body>
+
 </html>

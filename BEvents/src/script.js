@@ -1,7 +1,6 @@
-// script.js
-
 document.addEventListener("DOMContentLoaded", () => {
     gerarCalendario(2025, 0); // Janeiro é mês 0
+    iniciarCarrossel(); // Inicializa o carrossel lateral
 });
 
 function gerarCalendario(ano, mes) {
@@ -43,4 +42,18 @@ function showTodayEvents() {
 
 function showMonthEvents() {
     alert("Eventos do mês: Barra Rock Fest, Baile Folia, Barra Ponta, Bloco do Galo, Adote um Pet.");
+}
+
+function iniciarCarrossel() {
+    // Inicializa o carrossel lateral
+    $(document).ready(function(){
+        $('.carousel').slick({
+            infinite: true,   // Permite que o carrossel continue infinitamente
+            speed: 500,       // Duração da transição
+            autoplay: false,  // Desabilita o autoplay
+            arrows: true,     // Habilita as setas de navegação
+            prevArrow: '<button type="button" class="prev">←</button>',  // Personalização da seta anterior
+            nextArrow: '<button type="button" class="next">→</button>'   // Personalização da seta seguinte
+        });
+    });
 }
