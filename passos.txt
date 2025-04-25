@@ -23,7 +23,6 @@ Raissa
 git config --global user.name RaissaBorgess            
 git config --global user.email raissasantos123.rs33@gmail.com
 
-cd BEvents
 
 exte
 vscode-icons
