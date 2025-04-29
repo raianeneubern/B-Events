@@ -49,11 +49,12 @@ function iniciarCarrossel() {
     $(document).ready(function(){
         $('.carousel').slick({
             infinite: true,   // Permite que o carrossel continue infinitamente
-            speed: 500,       // Duração da transição
+            speed: 5000,       // Duração da transição
             autoplay: false,  // Desabilita o autoplay
             arrows: true,     // Habilita as setas de navegação
             prevArrow: '<button type="button" class="prev">←</button>',  // Personalização da seta anterior
             nextArrow: '<button type="button" class="next">→</button>'   // Personalização da seta seguinte
         });
     });
+
 }

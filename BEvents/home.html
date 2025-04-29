@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/BEvents/src/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="/BEvents/src/calendario.css">
 </head>
 
 <body>
@@ -40,25 +41,8 @@
         </section>
 
         <!-- Seção do calendário com tabela -->
-        <section class="calendario">
-            <h2 class="titulo-calendario">Janeiro 2025</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>DOM</th>
-                        <th>SEG</th>
-                        <th>TER</th>
-                        <th>QUA</th>
-                        <th>QUI</th>
-                        <th>SEX</th>
-                        <th>SÁB</th>
-                    </tr>
-                </thead>
-                <tbody id="calendar-body">
-
-                    <!-- O conteúdo do calendário será preenchido via JavaScript -->
-                </tbody>
-            </table>
+        <section class ="calendario">
+            <div id="calendar"></div>
         </section>
 
         <!-- Seção com botões para visualizar eventos do dia ou do mês -->
@@ -102,11 +86,17 @@
     <!-- Importando o script personalizado do site -->
     <script src="/BEvents/src/script.js"></script>
 
+
+
     <!-- Importando o jQuery (necessário para o funcionamento do Slick Carousel) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Importando o script do Slick Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+     <!-- Importando o script do calendário -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script src="src/calendario.js"></script>
 </body>
 
 </html>

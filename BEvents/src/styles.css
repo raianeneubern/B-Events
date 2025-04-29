@@ -54,57 +54,11 @@ body {
   justify-content: center;
 }
 
-.calendario {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 30px 0;
-}
-
-.titulo-calendario
-{
-  text-align: center;
-  width: 100%;
-}
-
-.calendario table {
-  background-color: #4e2a84 ;
-  padding: 10px;
-  border-radius: 5%;
-}
 
 .banner img {
   min-height: 100vh;
   width: 100%;
   object-fit: cover;
-}
-
-/* Calendário */
-.calendar {
-  background-color: #412B63;
-  margin: 2rem auto;
-  width: 90%;
-  max-width: 400px;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-  align-items: center;
-}
-
-.calendar h2 {
-  margin-bottom: 1rem;
-  color: #fff;
-}
-
-.calendar table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.calendar th, .calendar td {
-  padding: 0.5rem;
-  color: #fff;
-  text-align: center;
 }
 
 /* Cards */
@@ -150,17 +104,17 @@ body {
   font-weight: bold;
 }
 
-/* Caixa de Info */
+/* fundo sobre nós */
 .info-box {
   background-color: #2e1b5d;
-  margin: 2rem 1rem;
+  margin: 1rem 8rem;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 5px;
   text-align: center;
   color: #fff;
 }
 
-/* Footer */
+/* roda pé */
 footer {
   background-color: #1a1440;
   color: #fff;
