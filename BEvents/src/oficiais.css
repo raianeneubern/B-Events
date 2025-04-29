@@ -1,95 +1,162 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
 
-  body {
-    background-color: #2b1043;
-    color: white;
-  }
+body {
+  background-color: #2b1043;
+  color: white;
+}
 
-  header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #1a0630;
-  }
+/* Header Styles */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #1a0630;
+}
 
-  .logo {
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
+header {
+  overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+  width: 100%;
+}
 
+/* Navbar full width */
+.navbar-fullwidth {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #1a0630; /* Mantenha a cor do seu design */
+  padding: 1rem 0;
+}
+
+.navbar-fullwidth {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-icon {
+  font-size: 1.2rem;
+}
+
+/* Main Content */
+.eventos-btn {
+  display: block;
+  margin: 2rem auto;
+  background-color: #5a35a2;
+  border: none;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.eventos-btn:hover {
+  background-color: #6d44c2;
+}
+
+/* Gallery Grid - Adapted for Bootstrap */
+.galeria {
+  padding: 1rem 2rem;
+}
+
+.evento {
+  background-color: #3a1a5e;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.evento:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 220px; /* Aumentei a altura das imagens */
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 2px solid #5a35a2;
+}
+
+.card-body {
+  padding: 1.2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #1a0630;
+  text-align: center;
+}
+
+.social span {
+  display: block;
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .menu {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+      gap: 1rem;
+      font-size: 0.9rem;
   }
-
-  .menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .login-icon {
-    font-size: 1.2rem;
-  }
-
-  .eventos-btn {
-    display: block;
-    margin: 2rem auto;
-    background-color: #5a35a2;
-    border: none;
-    color: white;
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
+  
   .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 1rem;
-    padding: 1rem 2rem;
+      padding: 1rem;
   }
+  
+  .card-img-top {
+      height: 180px; /* Altura um pouco menor em mobile */
+  }
+}
 
-  .imagem {
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    overflow: hidden;
-    text-align: center;
-    font-size: 0.9rem;
+@media (min-width: 992px) {
+  .card-img-top {
+      height: 250px; /* Altura ainda maior em desktops */
   }
-
-  .imagem img {
-    width: 100%;
-    display: block;
-  }
-
-  .imagem p {
-    padding: 0.5rem;
-  }
-
-  .placeholder {
-    background-color: #ccc;
-    height: 150px;
-  }
-
-  footer {
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #1a0630;
-    text-align: center;
-  }
-
-  .social span {
-    display: block;
-    margin: 0.3rem 0;
-    font-size: 0.9rem;
-  }
+}
