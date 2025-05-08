@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #2b1043;
-  color: white;
+  background-color: rgba(246, 243, 239, 1);
+  color: hwb(0 93% 6%);
 }
 
 /* Header Styles */
@@ -26,14 +26,9 @@ header {
 
 /* Navbar full width */
 .navbar-fullwidth {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   background-color: #1a0630; /* Mantenha a cor do seu design */
   padding: 1rem 0;
+  width: 100%;
 }
 
 .navbar-fullwidth {
@@ -41,10 +36,7 @@ header {
   padding-right: 0;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
+
 
 .menu {
   list-style: none;
@@ -58,9 +50,7 @@ header {
   font-weight: 500;
 }
 
-.login-icon {
-  font-size: 1.2rem;
-}
+
 
 /* Main Content */
 .eventos-btn {
