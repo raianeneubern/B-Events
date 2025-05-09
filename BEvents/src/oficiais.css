@@ -10,6 +10,13 @@ body {
   color: hwb(0 93% 6%);
 }
 
+/* Tamanho da logo */
+.logoOficiais img{
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+}
+
 /* Header Styles */
 header nav {
   display: flex;

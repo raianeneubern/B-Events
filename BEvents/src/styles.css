@@ -6,9 +6,22 @@
   font-family: 'Inter', sans-serif;
 }
 
+html, body {
+  width: 100%;
+}
+
 body {
   background-color: rgba(246, 243, 239, 1);
   color: hwb(0 93% 6%);
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
 }
 
 /* Navbar */
@@ -78,18 +91,26 @@ footer {
   padding: 1rem;
 }
 
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+
+.navbar .nav-links a {
+  margin: 20px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  text-underline-offset: none;
+  color: white;
+}
+
+
 /* Responsividade geral */
 @media (max-width: 768px) {
-  .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .navbar .nav-links {
-      flex-direction: column;
-      width: 100%;
-  }
-
   .event-cards {
       padding: 1rem 0.5rem;
   }
