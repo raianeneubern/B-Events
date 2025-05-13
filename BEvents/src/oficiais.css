@@ -57,24 +57,19 @@ header {
   font-weight: 500;
 }
 
-
-
 /* Main Content */
 .eventos-btn {
   display: block;
-  margin: 2rem auto;
+  margin: 30px 2REM;
   background-color: #5a35a2;
   border: none;
   color: white;
   padding: 0.8rem 2rem;
   font-size: 1rem;
   border-radius: 5px;
-  cursor: pointer;
   transition: background-color 0.3s;
-}
-
-.eventos-btn:hover {
-  background-color: #6d44c2;
+  width: 215px;
+  
 }
 
 /* Gallery Grid - Adapted for Bootstrap */
@@ -83,7 +78,7 @@ header {
 }
 
 .evento {
-  background-color: #3a1a5e;
+  background-color: #5a35a2;
   border-radius: 5px;
   overflow: hidden;
   height: 100%;
