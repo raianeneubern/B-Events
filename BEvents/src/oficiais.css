@@ -22,7 +22,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem 5vw; 
   background-color: #1a0630;
 }
 
@@ -44,11 +44,18 @@ header {
 }
 
 
-
 .menu {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-between;
+  gap: 3vw; /* espaçamento proporcional */
+  flex-grow: 1; /* faz o menu ocupar o espaço disponível */
+  margin-left: 2rem;
+}
+
+.menu li {
+  flex: 1;
+  text-align: center;
 }
 
 .menu a {
