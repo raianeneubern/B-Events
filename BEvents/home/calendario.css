@@ -184,9 +184,10 @@
   background: rgba(249, 233, 0, 1);
 }
 
+/* Barra de enventos do calendario*/
 .details {
   position: relative;
-  width: 700px;
+  width: 100%;
   height: 75px;
   background: #7b5796;
   margin-top: 5px;
@@ -205,6 +206,7 @@
   animation: moveToTopFade .5s ease both;
 }
 
+/* estilo da setinha*/
 .arrow {
   position: absolute;
   top: -5px;
@@ -281,7 +283,6 @@
   height: 30px;
   background: #8C6FA1;
   line-height: 30px;
-
 }
 
 .entry {
