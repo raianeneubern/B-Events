@@ -195,3 +195,7 @@ footer {
       height: 150px;
   }
 }
+
+.slick-slide  {
+  width: 320px !important;
+}
