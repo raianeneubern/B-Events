@@ -9,16 +9,13 @@ Fran
 git config --global user.name franciellemagiore
 git config --global user.email franciellemagiore12@gmail.com
 
-
 loren
-
 
 git config --global user.name LorenTangi
 git config --global user.email lorentangi24@gmail.com
 
 
 Raissa
-
 
 git config --global user.name RaissaBorgess            
 git config --global user.email raissasantos123.rs33@gmail.com
