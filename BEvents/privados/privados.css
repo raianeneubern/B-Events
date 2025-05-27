@@ -9,7 +9,7 @@
     background-color: rgba(246, 243, 239, 1);
     color: hwb(0 93% 6%);
   }
-  
+
   
   /* Tamanho da logo */
   .logoOficiais img{
@@ -37,14 +37,12 @@
     background-color: #1a0630; /* Mantenha a cor do seu design */
     padding: 1rem 0;
     width: 100%;
-  }
-  
-  .navbar-fullwidth {
     padding-left: 0;
     padding-right: 0;
   }
-  
-  
+
+  .navbar-fullwidth .n
+
   .menu {
     list-style: none;
     display: flex;
