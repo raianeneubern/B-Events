@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function gerarCalendario(ano, mes) {
     const corpoCalendario = document.getElementById("calendar-body");
+    if (!corpoCalendario) return;
     corpoCalendario.innerHTML = "";
 
     const primeiroDia = new Date(ano, mes, 1);

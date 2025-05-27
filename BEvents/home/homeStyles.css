@@ -34,16 +34,11 @@ ul {
   color: #fff;
 }
 
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  width: 40px;
-}
-
 /* Tamanho da logo */
 .navbar .logo img{
-  width: 200px;
+  max-width: 120px;
   height: auto;
+  
 }
 
 
@@ -194,4 +189,8 @@ footer {
       width: 200px; /* Ajusta ainda mais para telas muito pequenas */
       height: 150px;
   }
+}
+
+.slick-slide  {
+  width: 320px !important;
 }
