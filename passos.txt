@@ -20,6 +20,8 @@ Raissa
 git config --global user.name RaissaBorgess            
 git config --global user.email raissasantos123.rs33@gmail.com
 
+Ir no lugar que commita, selecione os três pontinhos e checkout.
+Selecione o nome de vocês a partir disso pode dar o commit tranquilo
 
 exte
 vscode-icons

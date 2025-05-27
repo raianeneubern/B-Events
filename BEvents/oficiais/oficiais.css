@@ -11,11 +11,13 @@ body {
 }
 
 /* Tamanho da logo */
-.logoOficiais img{
-  width: 100%;
-  max-width: 120px;
-  height: auto;
+.logo img{
+  height: 60px; /* Aumente conforme necessário */
+  max-height: 100%; /* Garante que não estoure a navbar */
+  object-fit: contain; /* Mantém a proporção sem distorcer */
+  margin-left: 10px; /* Espaçamento opcional */
 }
+
 
 /* Header Styles */
 header nav {
@@ -24,6 +26,7 @@ header nav {
   justify-content: space-between;
   padding: 1rem 5vw; 
   background-color: #1a0630;
+  font-size: 20px;
 }
 
 header {
