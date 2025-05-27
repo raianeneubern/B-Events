@@ -16,6 +16,8 @@
     }
   }
 
+  var a = Date;
+
   Calendar.prototype.draw = function() {
     //Create Header
     this.drawHeader();
