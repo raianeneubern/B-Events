@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    background-color: rgba(246, 243, 239, 1);
+    color: hwb(0 93% 6%);
+  }
+  
+  /* Tamanho da logo */
+  .logo img{
+    height: 60px; /* Aumente conforme necessário */
+    max-height: 100%; /* Garante que não estoure a navbar */
+    object-fit: contain; /* Mantém a proporção sem distorcer */
+    margin-left: 10px; /* Espaçamento opcional */
+  }
+  
+  
+  /* Header Styles */
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5vw; 
+    background-color: #1a0630;
+    font-size: 20px;
+  }
+  
+  header {
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+    width: 100%;
+  }
+  
+  /* Navbar full width */
+  .navbar-fullwidth {
+    background-color: #1a0630; /* Mantenha a cor do seu design */
+    padding: 1rem 0;
+    width: 100%;
+  }
+  
+  .navbar-fullwidth {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw; /* espaçamento proporcional */
+    flex-grow: 1; /* faz o menu ocupar o espaço disponível */
+    margin-left: 2rem;
+  }
+  
+  .menu li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Main Content */
+  .eventos-btn {
+    display: block;
+    margin: 30px 2rem;
+    background-color: #5a35a2;
+    border: none;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 224px;
+    
+  }
+  
+  /* Gallery Grid - Adapted for Bootstrap */
+  .galeria {
+    padding: 1rem 2rem;
+  }
+  
+  .evento {
+    background-color: #5a35a2;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .evento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 220px; /* Aumentei a altura das imagens */
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 2px solid #5a35a2;
+  }
+  
+  .card-body {
+    padding: 1.2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: #1a0630;
+    text-align: center;
+  }
+  
+  .social span {
+    display: block;
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .menu {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .galeria {
+        padding: 1rem;
+    }
+    
+    .card-img-top {
+        height: 180px; /* Altura um pouco menor em mobile */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .card-img-top {
+        height: 250px; /* Altura ainda maior em desktops */
+    }
+  }
