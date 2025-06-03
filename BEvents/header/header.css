@@ -1,0 +1,74 @@
+/* Tamanho da logo */
+.logoOficiais img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+/* Header Styles */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5vw;
+    background-color: #1a0630;
+}
+
+header {
+    overflow-x: hidden;
+    /* Impede a barra de rolagem horizontal */
+    width: 100%;
+}
+
+/* Navbar full width */
+.navbar-fullwidth {
+    background-color: #1a0630;
+    /* Mantenha a cor do seu design */
+    padding: 1rem 0;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    /* espaçamento proporcional */
+    flex-grow: 1;
+    /* faz o menu ocupar o espaço disponível */
+    margin-left: 320px;
+    width: 400px;
+}
+
+.menu ul {
+    width: 400px;
+    padding-left: 8rem;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: blue; /* Cor ao passar o mouse */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/* Main Content */
+.eventos-btn {
+    display: block;
+    margin: 30px 2REM;
+    background-color: #5a35a2;
+    border: none;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 215px;
+}

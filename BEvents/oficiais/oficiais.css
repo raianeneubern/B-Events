@@ -10,60 +10,6 @@ body {
   color: hwb(0 93% 6%);
 }
 
-/* Tamanho da logo */
-.logoOficiais img{
-  width: 100%;
-  max-width: 120px;
-  height: auto;
-}
-
-/* Header Styles */
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 5vw; 
-  background-color: #1a0630;
-}
-
-header {
-  overflow-x: hidden; /* Impede a barra de rolagem horizontal */
-  width: 100%;
-}
-
-/* Navbar full width */
-.navbar-fullwidth {
-  background-color: #1a0630; /* Mantenha a cor do seu design */
-  padding: 1rem 0;
-  width: 100%;
-}
-
-.navbar-fullwidth {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-
-.menu {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 3vw; /* espaçamento proporcional */
-  flex-grow: 1; /* faz o menu ocupar o espaço disponível */
-  margin-left: 2rem;
-}
-
-.menu li {
-  flex: 1;
-  text-align: center;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
 /* Main Content */
 .eventos-btn {
   display: block;
